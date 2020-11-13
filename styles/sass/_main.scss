@@ -1,0 +1,54 @@
+.roller {
+    background-image: url("../Assets/darkside.jpg");
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 50%
+}
+
+
+.dice_display {
+    background-color: rgba(32, 163, 178, 0.6);
+    border: 5px solid blueviolet;
+    border-radius: 50px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.dice {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.die {
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    button {
+        margin-top: 40px;
+    }
+}
+
+
+.results {
+    display:flex;
+    justify-content: center;
+    border: 5px solid blueviolet;
+    border-radius: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    width:80%;
+}
+
+ul {
+    padding: 5%;
+}
+
+.clear {
+    margin-bottom: 50px;
+    padding: 15px 60px
+}
