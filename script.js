@@ -1,22 +1,22 @@
-//check if document ready
-//initialize app
-//on click/submit(might make this a form), a random number within the min/max number for that die will be selected probably using Math.floor and Math.random
-//display results on li's under they're respective ul's
-//limit results to ten or twenty li's
 //make sure to have an empty() on the clear rolls button
+//check if document ready
 $('.roll').click(function(){
-
+    //on click/submit(might make this a form), a random number within the min/max number for that die will be selected probably using Math.floor and Math.random
+    
+    
     const d4 = Math.floor(Math.random() * 4) + 1;
     const d6 = Math.floor(Math.random() * 6) + 1;
     const d8 = Math.floor(Math.random() * 8) + 1;
     const d10 = Math.floor(Math.random() * 10) + 1;
     const d12 = Math.floor(Math.random() * 12) + 1;
     const d20 = Math.floor(Math.random() * 20) + 1;
-
+    
+    //display results on li's under their respective ul's
     switch (this.id) {
         case 'd4':
             $('.d4_rolls').append(`<li><p>${d4}</p></li>`);
             break;
+            
         case 'd6':
             $('.d6_rolls').append(`<li><p>${d6}</p></li>`);
             break;
@@ -41,7 +41,9 @@ $('.roll').click(function(){
     // $('#d4_rolls').append(`<li><p>${d4}</p></li>`);
 })
 
+//limit results to ten or twenty li's
 
+//make sure to have an empty() on the clear rolls button
 $('#clear').on('click', function(){
     $('li').empty();
 });
@@ -49,5 +51,5 @@ $('#clear').on('click', function(){
 
 
 $(function() {
-
+//check if document ready
 })
