@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to CSS Stylesheet -->
     <link rel="stylesheet" href="./styles/style.css">
 
+    <!-- Link to Google WebFonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Tangerine:wght@400;700&display=swap"
         rel="stylesheet">
+
+        <!-- Link to Font Awesome -->
+        <script src="https://kit.fontawesome.com/481dfe009f.js" crossorigin="anonymous"></script>
+
+        <!-- link to Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <title>Adventure Dice!</title>
 </head>
@@ -18,21 +27,32 @@
             <div class="instructions_display">
                 <h1>Adventure Dice!</h1>
                 <p>Welcome to the Adventure Dice polyhedral dice roling app!</p>
-                <p>This app is intended to be used for table-top role playing games like Dungeons and Dragons, Pathfinder and others! Here are some instructions to get you started, when you're feeling ready, hit the bouncing arrow to go to the Adventure Dice Roller.</p>
-                <h2>Instructions:</h2>
-                <ol>
-                    <li>Choose a die to roll by pressing the "roll" button underneath the type of die you want to roll!</li>
-                    <li>Your roll will be displayed on the interface</li>
-                    <li>Up to 10 rolls for each type of die will be displayed on the interface.</li>
-                    <li>Clear the "clear rolls" button to clear all of the rolls from the interface! Make sure you write down any important rolls before doing this.</li>
-                    <li>That's it! I hope this enhances your campaign! More features will be added to this app as I am able to create them!</li>
-                </ol>
-                <p>Thank you for using this app, it was made with ❤</p>
+                <p>This app is intended to be used for table-top role playing games like Dungeons and Dragons, Pathfinder and others! Here are some instructions to get you started, when you're feeling ready, click the bouncing arrow below to go to the Adventure Dice Roller.</p>
+                <div class="instructions_list">
+                    <h2>Instructions:</h2>
+                    <ol>
+                        <li>Choose a die to roll by pressing the "roll" button underneath the type of die you want to roll!</li>
+                        <li>Your roll will be displayed on the interface</li>
+                        <li>Up to 10 rolls for each type of die will be displayed on the interface.</li>
+                        <li>Clear the "clear rolls" button to clear all of the rolls from the interface! Make sure you write down any important rolls before doing this.</li>
+                        <li>That's it! I hope this enhances your tabletop game campaign! More features will be added to this app as I am able to create them!</li>
+                    </ol>
+                </div>
+                <div class="credits">
+                    <p>Thank you for using this app, it was made with 💖</p>
+                    <p>Created at <a href="www.junocollege.com">Juno College</a></p>
+                    <p>Background artwork created by <a href="www.lyraina.com">Johanna Rupprecht</a> and copyright <a href="https://saylua.com/">Saylua</a>. Used with permission</p>
+                </div>
+            </div>
+            <div class="arrow">
+                <a href="#roller">
+                    <i class="fas fa-chevron-down animate__animated animate__bounce animate__infinite"></i>
+                </a>
             </div>
         </div>
 
     </section>
-    <section class="roller">
+    <section class="roller" id="roller">
         <div class="wrapper">
             <div class="dice_display">
                 <h1>Adventure Dice!</h1>

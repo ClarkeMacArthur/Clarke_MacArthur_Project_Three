@@ -272,13 +272,14 @@ h1 {
   text-align: center;
   margin: 20px;
   padding-right: 20px;
+  line-height: 1;
 }
 
 body {
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.6;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #6f27b3;
 }
 
@@ -302,10 +303,11 @@ ul li p {
 .roller {
   background-image: url("../Assets/darkside.jpg");
   background-size: cover;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-top: 100px;
-  padding-bottom: 50%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .dice_display, .instructions_display {
@@ -376,4 +378,63 @@ ul {
   background: lightseagreen;
   background: linear-gradient(140deg, lightseagreen 19%, blueviolet 100%);
   min-height: 100vh;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.instructions p {
+  margin: 20px 10%;
+}
+
+.instructions_list {
+  border: 5px solid blueviolet;
+  border-radius: 50px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instructions_list h2 {
+  padding-top: 10px;
+  text-decoration: underline;
+}
+
+.instructions_list ol {
+  padding: 50px;
+}
+
+.instructions_list ol li {
+  margin-bottom: 15px;
+}
+
+.credits {
+  margin: 20px 0;
+}
+
+.credits p {
+  margin: 0 10%;
+  text-align: center;
+}
+
+.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.arrow .fa-chevron-down {
+  font-size: 15rem;
+  margin-top: 100px;
+  color: lightseagreen;
 }
