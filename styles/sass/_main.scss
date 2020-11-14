@@ -9,7 +9,7 @@
 }
 
 
-.dice_display {
+.dice_display, .instructions_display {
     background-color: rgba(32, 163, 178, 0.6);
     border: 5px solid blueviolet;
     border-radius: 50px;
@@ -51,4 +51,10 @@ ul {
 .clear {
     margin-bottom: 50px;
     padding: 15px 60px
+}
+
+.instructions {
+    background: rgb(32,178,170);
+    background: linear-gradient(140deg, rgba(32,178,170,1) 19%, rgba(138,43,226,1) 100%); 
+    min-height: 100vh;
 }

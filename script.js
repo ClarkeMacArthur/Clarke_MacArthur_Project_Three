@@ -28,7 +28,7 @@ $(function() {
                 case 'd4':
                     if (d4Counter < 10) {
                         d4Counter++
-                        $('.d4_rolls').append(`<li><p>${d4}</p></li>`);
+                        $('.d4_rolls').append(`<li class="dice_roll"><p>${d4}</p></li>`);
                     } else {
                         break;
                     }
@@ -37,7 +37,7 @@ $(function() {
                     case 'd6':
                     if (d6Counter < 10) {
                         d6Counter++
-                        $('.d6_rolls').append(`<li><p>${d6}</p></li>`);
+                        $('.d6_rolls').append(`<li class="dice_roll"><p>${d6}</p></li>`);
                     } else {
                         break;
                     }
@@ -46,7 +46,7 @@ $(function() {
                     case 'd8':
                     if (d8Counter < 10) {
                         d8Counter++
-                        $('.d8_rolls').append(`<li><p>${d8}</p></li>`);
+                        $('.d8_rolls').append(`<li class="dice_roll"><p>${d8}</p></li>`);
                     } else {
                         break;
                     }
@@ -55,7 +55,7 @@ $(function() {
                     case 'd10':
                     if (d10Counter < 10) {
                         d10Counter++
-                        $('.d10_rolls').append(`<li><p>${d10}</p></li>`);
+                        $('.d10_rolls').append(`<li class="dice_roll"><p>${d10}</p></li>`);
                     } else {
                         break;
                     }
@@ -64,7 +64,7 @@ $(function() {
                     case 'd12':
                     if (d12Counter < 10) {
                         d12Counter++
-                        $('.d12_rolls').append(`<li><p>${d12}</p></li>`);
+                        $('.d12_rolls').append(`<li class="dice_roll"><p>${d12}</p></li>`);
                     } else {
                         break;
                     }
@@ -73,7 +73,7 @@ $(function() {
                     case 'd20':
                     if (d20Counter < 10) {
                         d20Counter++
-                        $('.d20_rolls').append(`<li><p>${d20}</p></li>`);
+                        $('.d20_rolls').append(`<li class="dice_roll"><p>${d20}</p></li>`);
                     } else {
                         break;
                     }
@@ -83,7 +83,7 @@ $(function() {
         
         //second event listener: clears results and resets the roll counters to 0
         $('#clear').on('click', function(){
-            $('li').empty();
+            $('.dice_roll').empty();
             d4Counter = 0;
             d6Counter = 0;
             d8Counter = 0;

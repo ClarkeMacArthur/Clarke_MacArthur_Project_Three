@@ -267,7 +267,6 @@ button {
 
 h1 {
   font-family: 'Tangerine', cursive;
-  color: #6f27b3;
   font-size: 17rem;
   padding-left: 20px;
   text-align: center;
@@ -277,8 +276,10 @@ h1 {
 
 body {
   font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.6;
   font-weight: 600;
   font-size: 2rem;
+  color: #6f27b3;
 }
 
 ul {
@@ -294,6 +295,10 @@ ul li {
   text-align: center;
 }
 
+ul li p {
+  font-size: 3rem;
+}
+
 .roller {
   background-image: url("../Assets/darkside.jpg");
   background-size: cover;
@@ -303,7 +308,7 @@ ul li {
   padding-bottom: 50%;
 }
 
-.dice_display {
+.dice_display, .instructions_display {
   background-color: rgba(32, 163, 178, 0.6);
   border: 5px solid blueviolet;
   border-radius: 50px;
@@ -365,4 +370,10 @@ ul {
 .clear {
   margin-bottom: 50px;
   padding: 15px 60px;
+}
+
+.instructions {
+  background: lightseagreen;
+  background: linear-gradient(140deg, lightseagreen 19%, blueviolet 100%);
+  min-height: 100vh;
 }
