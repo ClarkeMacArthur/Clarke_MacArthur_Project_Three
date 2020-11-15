@@ -496,6 +496,8 @@ ul li p {
     justify-items: center;
     -ms-grid-column-align: center;
         justify-self: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .clear {
     -ms-grid-column: 2;
@@ -507,5 +509,27 @@ ul li p {
         justify-self: center;
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 9rem;
+  }
+  .instructions_display {
+    border: 0px;
+  }
+  .instructions_display .instructions_list {
+    border: 0px;
+  }
+  .roller .wrapper {
+    width: 100%;
+  }
+  .dice_display {
+    border: none;
+  }
+  .results {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
