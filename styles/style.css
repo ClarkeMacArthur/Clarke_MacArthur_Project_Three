@@ -260,9 +260,19 @@ button {
   padding: 15px 20px;
   background-color: blueviolet;
   color: white;
-  border: 2px solid #6f27b3;
+  border: none;
   border-radius: 20px;
   cursor: pointer;
+  -webkit-box-shadow: 0px 5px 5px #a649fd;
+          box-shadow: 0px 5px 5px #a649fd;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:active {
+  top: 5px;
+  -webkit-box-shadow: 0px 0px 0px #b377eb;
+          box-shadow: 0px 0px 0px #b377eb;
 }
 
 h1 {
@@ -326,6 +336,19 @@ ul li p {
           align-items: center;
 }
 
+.dice_results_display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .dice {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,10 +385,10 @@ ul li p {
   border-radius: 50px;
   padding-bottom: 100px;
   margin-bottom: 50px;
-  width: 80%;
+  width: 100%;
 }
 
-ul {
+.results ul {
   padding: 5%;
 }
 
@@ -437,4 +460,52 @@ ul {
   font-size: 15rem;
   margin-top: 100px;
   color: lightseagreen;
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 12rem;
+  }
+  .dice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dice_results_display {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    margin-right: 5%;
+  }
+  .results {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    margin-top: 25%;
+    min-height: 80vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .clear {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    margin-top: 15%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
