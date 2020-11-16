@@ -97,9 +97,15 @@
 }
 
 @media (max-width:400px) {
+
+    .roller {
+        padding: 45% 0;
+    }
+
     .results {
         margin-top: 65%;
     }
+
 .dice{
     padding-left:0;
     img {

@@ -443,7 +443,7 @@ ul li p {
 }
 
 .credits p {
-  margin: 0 10%;
+  margin: 8px 10%;
   text-align: center;
 }
 
@@ -562,6 +562,9 @@ ul li p {
 }
 
 @media (max-width: 400px) {
+  .roller {
+    padding: 45% 0;
+  }
   .results {
     margin-top: 65%;
   }
