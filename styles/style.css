@@ -481,13 +481,17 @@ ul li p {
     -ms-grid-columns: 1fr 3fr;
         grid-template-columns: 1fr 3fr;
     margin-right: 5%;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
   }
   .results {
     -ms-grid-row: 1;
         grid-row-start: 1;
     -ms-grid-column: 2;
         grid-column-start: 2;
-    margin-top: 25%;
+    margin-top: 45%;
+    margin-bottom: 10%;
     min-height: 80vh;
     display: -ms-grid;
     display: grid;
@@ -497,7 +501,6 @@ ul li p {
     -ms-grid-column-align: center;
         justify-self: center;
     padding-bottom: 0;
-    margin-bottom: 0;
   }
   .clear {
     -ms-grid-column: 2;
@@ -516,13 +519,19 @@ ul li p {
   h1 {
     font-size: 9rem;
   }
+  body {
+    font-size: 1.8rem;
+  }
   .instructions_display {
     border: 0px;
   }
   .instructions_display .instructions_list {
     border: 0px;
   }
-  .roller .wrapper {
+  .instructions_display .instructions_list ol {
+    padding: 50px 0;
+  }
+  .wrapper {
     width: 100%;
   }
   .dice_display {
@@ -531,5 +540,15 @@ ul li p {
   .results {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+  }
+  .results h2 {
+    font-size: 2.7rem;
+  }
+  .clear {
+    padding: 15px 40px;
+  }
+  ul li p {
+    font-size: 2rem;
   }
 }
