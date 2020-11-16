@@ -463,6 +463,9 @@ ul li p {
 }
 
 @media (max-width: 1000px) {
+  .roller {
+    padding: 15% 0;
+  }
   body {
     font-size: 2rem;
   }
@@ -516,8 +519,13 @@ ul li p {
 }
 
 @media (max-width: 650px) {
+  .roller {
+    padding: 25% 0;
+  }
   h1 {
     font-size: 9rem;
+    padding-top: 20px;
+    font-weight: 700;
   }
   body {
     font-size: 1.8rem;
@@ -550,5 +558,17 @@ ul li p {
   }
   ul li p {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .results {
+    margin-top: 65%;
+  }
+  .dice {
+    padding-left: 0;
+  }
+  .dice img {
+    width: 120%;
   }
 }
