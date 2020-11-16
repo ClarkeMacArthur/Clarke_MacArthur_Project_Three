@@ -93,7 +93,8 @@ $(function () {
         d20Counter = 0;
     });
 
-    $('a').on('click', function () {
+    // third event listener that displays the dice roller to the page and scrolls smoothly down to it. This is attached to the arrow icon.
+    $('.fa-chevron-down').on('click', function () {
         $(".roller").show();
         $("html").animate({
             scrollTop: $(".roller").offset().top
