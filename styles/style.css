@@ -290,11 +290,11 @@ body {
   line-height: 1.6;
   font-weight: 600;
   font-size: 2.5rem;
-  color: #571e9d;
+  color: #4a1191;
 }
 
 ul {
-  color: #571e9d;
+  color: #4a1191;
 }
 
 ul h2 {
@@ -337,7 +337,7 @@ ul li p {
 }
 
 .dice_display {
-  background-color: rgba(32, 163, 178, 0.7);
+  background-color: rgba(28, 178, 196, 0.7);
 }
 
 .dice_results_display {
@@ -577,5 +577,8 @@ ul li p {
   }
   .dice img {
     width: 120%;
+  }
+  .dice button {
+    margin-top: 10px;
   }
 }

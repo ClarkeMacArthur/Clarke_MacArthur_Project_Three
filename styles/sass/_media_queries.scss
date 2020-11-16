@@ -106,10 +106,13 @@
         margin-top: 65%;
     }
 
-.dice{
-    padding-left:0;
-    img {
-        width:120%;
+    .dice{
+        padding-left:0;
+        img {
+        width: 120%;
+        }
+        button {
+            margin-top: 10px;
+        }
     }
-}
 }
