@@ -340,7 +340,7 @@ ul li p {
   background-color: rgba(28, 178, 196, 0.7);
 }
 
-.dice_display .dice_results_display {
+.dice_results_display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,7 +363,7 @@ ul li p {
   padding: 20px;
 }
 
-.dice .die {
+.die {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,7 +374,7 @@ ul li p {
   padding: 20px;
 }
 
-.dice .die button {
+.die button {
   margin-top: 40px;
 }
 
